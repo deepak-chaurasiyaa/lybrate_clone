@@ -28,7 +28,7 @@ body a {
 /* container navbar */
 .navbar-container {
   display: grid;
-  grid-template-columns: 25% 60% 10%;
+  grid-template-columns: 25% 60% 13%;
   background: white;
   padding: 10px;
   height: 50px;
@@ -50,9 +50,9 @@ body a {
 }
 
 .content a {
-  margin: 18px;
+  margin: 13px;
   color: rgb(63, 63, 63);
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -61,25 +61,32 @@ body a {
   margin-bottom: -10px;
 }
 #logo {
-  width: 120px;
-  margin-left: -60px;
-  color: white;
-  background: rgb(209, 14, 14);
+  width: 100px;
+  margin-left: -30px;
+  color: rgb(253, 253, 253);
+  background: rgb(196, 31, 31);
   padding: 10px;
   border-radius: 50px;
   text-align: left;
-  height: 30px;
+  height: 27px;
 }
+#logo p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: -3px;
+}
+
 #logo span {
-  font-size: 19px;
+  font-size: 17px;
   font-weight: 700;
   text-decoration: none;
   margin-top: 0;
-  margin-left: 8px;
+  margin-left: 11px;
+  text-align: center;
 }
 #logos a:last-child {
   margin-top: -50px;
-  margin-left: -50px;
+  margin-left: -30px;
 }
 .searchBar {
   display: grid;
@@ -94,6 +101,7 @@ body a {
   font-size: 14px;
   padding: 12px;
   color: rgb(146, 145, 145);
+  outline: none;
 }
 .searchBar button {
   margin-right: 13px;
