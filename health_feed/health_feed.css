@@ -88,6 +88,8 @@ body a {
   margin-top: -50px;
   margin-left: -30px;
 }
+
+/* search bar section */
 .searchBar {
   display: grid;
   grid-template-columns: 80% 20%;
