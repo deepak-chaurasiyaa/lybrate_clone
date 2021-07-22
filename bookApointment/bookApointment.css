@@ -235,12 +235,14 @@ body a {
 
 /* <!-- middle and result of filters section and list of doctors with their details --> */
 #middleContainer {
-  height: 1500px;
+  /* height: 1500px; */
   width: 47%;
   /* border: 1px solid red; */
   margin-left: 344px;
   margin-top: 16px;
 }
+
+/* recommended dection */
 #slidingHospitalDetails {
   /* border: 1px solid black; */
   display: grid;
@@ -290,12 +292,16 @@ body a {
   grid-template-columns: 33% 33% 34%;
   height: 50px;
 }
+.buttonsDiv :hover {
+  cursor: pointer;
+}
 .buttonsDiv button {
   font-size: 16px;
   font-weight: 550;
   border: 1px solid rgb(202, 202, 202);
   background: rgb(231, 231, 231);
 }
+
 .buttonsDiv button i {
   margin: 10px;
   color: grey;
@@ -339,6 +345,63 @@ body a {
   height: 55px;
   width: 35px;
   text-align: center;
+}
+/* each doctor details on search */
+
+.eachdiv {
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
+  padding: 10px;
+  background: white;
+  margin-top: 20px;
+}
+.doctorLogo img {
+  border-radius: 250px;
+  margin-top: 50px;
+  width: 75%;
+  padding: 0;
+}
+.buttonsDoctor {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+.doctorDiv p {
+  margin: 4px;
+}
+.doctorName {
+  font-size: 18px;
+  font-weight: 550;
+}
+.degree:hover {
+  cursor: pointer;
+  color: rgb(163, 30, 30);
+}
+.Catg {
+  text-decoration: underline;
+}
+.Add {
+  color: rgb(70, 70, 107);
+}
+.recentConsult {
+  color: grey;
+  font-size: 17px;
+}
+.recentConsult ~ p {
+  color: rgb(10, 10, 10);
+}
+.experienceDiv2 {
+  margin-top: 2px;
+  font-size: 15px;
+  color: rgb(167, 163, 163);
+}
+.experienceDiv2 p {
+  color: rgb(32, 32, 32);
+  font-size: 13px;
+  /* margin-left: 10px; */
+}
+.experienceDiv2 p > i {
+  margin: 5px;
+  color: grey;
 }
 /* right section of page */
 /* related feed post */
