@@ -1,0 +1,155 @@
+#navbar {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  grid-template-columns: 350px 121px 90px 100px 109px 113px;
+  text-align: right;
+  margin-left: 600px;
+  align-items: center;
+}
+#navbar {
+  cursor: pointer;
+}
+#nav {
+  margin-top: -8.5px;
+  width: 100%;
+  height: 50px;
+  float: right;
+  border-bottom: 1.2px solid rgb(128, 123, 123);
+  border-top: 1px solid rgb(88, 88, 88);
+}
+#navbar p {
+  padding-top: 8px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 7px;
+  text-align: center;
+}
+#navbar p:hover {
+  background-color: whitesmoke;
+}
+#container1 {
+  margin-top: 5px;
+  width: 60%;
+  margin-left: 20%;
+  height: 170px;
+}
+#container2 {
+  margin-top: 5px;
+  width: 60%;
+  margin-left: 20%;
+  height: 250px;
+}
+#container3 {
+  margin-top: 5px;
+  width: 60%;
+  margin-left: 20%;
+  height: 170px;
+}
+#assurance {
+  display: grid;
+  margin-top: 10px;
+  grid-template-columns: auto auto auto;
+}
+h3,
+p {
+  text-align: center;
+}
+.assurancelogo {
+  margin-top: 10px;
+  margin-left: 90px;
+}
+#line4 {
+  height: 1px;
+  background-color: rgb(88, 88, 88);
+}
+.sec1 {
+  height: 70px;
+
+  background: url("	https://www.lybrate.com/img/watermark_70px.png");
+  background-color: #4c4c4c;
+}
+.image {
+  float: left;
+  margin-top: -30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+.drname {
+  padding: 3px;
+  font-size: 18px;
+  font-weight: 500;
+
+  font-family: robotoRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.degree,
+.location,
+.peopleHelped,
+.d-number,
+.mode,
+.valid {
+  font-family: robotoRegular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+#row2 {
+  margin-top: -70px;
+  margin-right: 30px;
+  float: right;
+}
+#redheart {
+  margin-bottom: -8px;
+  height: 25px;
+  margin-left: 270px;
+}
+.peopleHelped {
+  margin-bottom: 5px;
+}
+
+.chosemode {
+  font-size: 15px;
+  font-weight: 500;
+  color: #000;
+  margin: 0 0 8px 0;
+  padding: 0px;
+  text-transform: uppercase;
+}
+.line2 {
+  height: 70px;
+  width: 100%;
+  border-top: 1px solid rgb(88, 88, 88);
+  border-bottom: 1px solid rgb(88, 88, 88);
+}
+.line3 {
+  border-bottom: 1px solid rgb(88, 88, 88);
+}
+.cunsoltbutton {
+  color: white;
+  border: 2px black;
+  background-color: rgb(194, 9, 9);
+  height: 30px;
+  width: 130px;
+}
+.textconsult {
+  display: grid;
+  padding-top: 5px;
+  grid-template-columns: 20% 40% 20% 40%;
+}
+.image img {
+  border-radius: 50%;
+  border-color: 20px solid black;
+}
+#creaditcard {
+  width: 30px;
+  height: 30px;
+}
+.texticon {
+  margin: 12%;
+}
+.mode {
+  margin: 10px;
+}
+#consulter {
+  margin: 10px;
+}
