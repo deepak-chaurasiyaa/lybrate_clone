@@ -1,0 +1,189 @@
+body {
+  background-color: whitesmoke;
+}
+#head {
+  background-color: white;
+}
+#divImg > img {
+  height: 35px;
+  width: 130px;
+  margin-left: 80px;
+  float: left;
+}
+#divApp,
+#divDoc,
+#divLog {
+  height: 30px;
+  float: right;
+  margin-right: 50px;
+  color: black;
+  font-family: sans-serif;
+  font-size: large;
+  font-weight: normal;
+}
+#details {
+  clear: both;
+  height: 600px;
+  width: 100%;
+  background-image: url("https://assets.lybrate.com/q_auto,f_auto/imgs/product/www/Banner_Ask_Question_default.jpg");
+  background-size: cover;
+}
+#box {
+  width: 45%;
+  height: 500px;
+  margin-left: 80px;
+  padding: 10px;
+}
+#box > p {
+  text-align: center;
+  font-size: xx-large;
+  font-family: sans-serif;
+  margin: 1px;
+}
+#innerBox {
+  height: 450px;
+  width: 100%;
+  border: 1px solid silver;
+  border-radius: 5px;
+  background-color: white;
+}
+#inp {
+  height: 150px;
+  width: 95%;
+  border: 1px solid silver;
+  text-align: justify;
+  margin-left: 2.3%;
+  border-radius: 3px;
+  font-size: large;
+  font-family: sans-serif;
+}
+#innerBox p {
+  margin-left: 2.3%;
+  font-weight: 600;
+  font-family: sans-serif;
+  margin-bottom: 3px;
+}
+#quality {
+  font-weight: normal !important;
+  border-bottom: 1px solid silver;
+  width: 96%;
+}
+#quality > span {
+  color: orangered;
+}
+.inp {
+  margin-left: 5%;
+}
+select {
+  margin-left: 10%;
+  height: 28px;
+  width: 250px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+.email {
+  height: 28px;
+  width: 250px;
+  border-radius: 4px;
+  border: 1px solid silver;
+}
+.one {
+  margin-left: 5%;
+}
+button {
+  width: 518px;
+  margin-left: 5%;
+  height: 40px;
+  background-color: rgb(240, 39, 3);
+  border-radius: 3px;
+  margin-top: 10px;
+  border: none;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+#lastP {
+  color: rgb(131, 126, 126);
+  font-family: sans-serif;
+  margin-left: 10% !important;
+  font-weight: normal !important;
+  margin-top: 2px;
+}
+#lybrate {
+  height: 250px;
+  width: 70%;
+  border: 1px solid silver;
+  margin-left: 15%;
+  border-radius: 5px;
+  margin-top: -30px;
+  background-color: white;
+}
+#boldP {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: xx-large;
+  margin-top: 10px;
+}
+#health {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: -25px;
+  color: rgb(128, 125, 125);
+  font-weight: bold;
+}
+.lybrate1 {
+  height: 100;
+  width: 30%;
+  border: yellow;
+  float: left;
+  border-right: 1px solid silver;
+}
+#image {
+  margin-left: 40%;
+}
+.privacy,
+.maintain {
+  text-align: center;
+  font-family: sans-serif;
+}
+.privacy {
+  font-size: larger;
+  margin-top: -5px;
+}
+.maintain {
+  color: rgb(128, 125, 125);
+  margin-top: -5px;
+}
+.space {
+  margin-left: 5%;
+}
+.bord {
+  border-right: none !important;
+}
+#footer {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(54, 46, 46);
+  margin-top: 20px;
+}
+.footer1 {
+  width: 200px;
+  float: left;
+  margin-left: 100px;
+}
+.current {
+  color: white;
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.numbers {
+  color: white;
+  font-size: xx-large;
+  margin-top: -10px;
+  text-align: center;
+}
+.distance {
+  margin-left: 18%;
+}
