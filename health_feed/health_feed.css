@@ -321,7 +321,8 @@ body a {
   width: 95%;
   margin-right: 20px;
 }
-.solution {
+.solution,
+.lastSpan {
   text-align: left;
   margin: 20px;
   padding: 5px;

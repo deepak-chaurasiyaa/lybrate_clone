@@ -1,3 +1,5 @@
+let age = [22, 24, 28, 32, 68, 56, 60, 18]
+let k = 0;
 function askAQuestion() {
     let question = document.getElementById("inp").value;
     let gender = document.getElementById('ip1').value;
@@ -7,7 +9,8 @@ function askAQuestion() {
         question,
         gender,
         email,
-        phone
+        phone,
+        age: age[k++]
     };
     let arr;
     arr = localStorage.getItem('questions');
@@ -18,6 +21,7 @@ function askAQuestion() {
     }
     arr.push(details);
     localStorage.setItem('questions', JSON.stringify(arr));
+    alert('submitted! you will get a doctors response soon');
 }
 
 function movetoLogin() {
