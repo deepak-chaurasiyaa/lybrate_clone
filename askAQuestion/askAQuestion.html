@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<title>Ask a doctor</title>
+
+<head>
+    <link rel="stylesheet" href="askAQuestion.css" type="text/css">
+</head>
+
+<body>
+    <div id="head">
+        <div id="divImg">
+            <img src="https://assets.lybrate.com/q_auto,f_auto/code/img/lybrate-logo-new.png" />
+        </div>
+        <div id="divApp">
+            Download App
+        </div>
+        <div id="divLog" onclick="movetoLogin()">
+            Login/Sign-Up
+        </div>
+        <div style="cursor: pointer;" id="divDoc" onclick='gotoDoctors()'>
+            For Doctors
+        </div>
+        <div id="details">
+            <div id="box">
+                <p>Get brief answers for your health queries from top Doctors. Its FREE!</p>
+                <div id="innerBox">
+                    <p>What is your question?</p>
+                    <textarea id="inp" rows="5" cols="33"
+                        placeholder="Enter questions for you or someone else. For e.g. I am 25 year old female and have backache for last 2 months. I have used a pain relief ointment cream for couple of days but havent got relief. What should i do now?"></textarea>
+                    <p id="quality">Question Quality:<span>Low</span></p>
+                    <p>I am a, </p>
+                    <select class="ip" id="ip1">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="others">Others</option>
+                    </select>
+
+                    <p>Where should we send secure notifications?</p>
+                    <input id="mail" class="email one" type="email" placeholder="Your Email Address" />
+                    <input id="mob" class="email" type="number" placeholder="Your Mobile Number" />
+                    <button onclick="askAQuestion()">Ask FREE Question Securely</button>
+                    <p id="lastP">Complete privacy and anonymity guaranteed • Quick responses</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div id="lybrate">
+        <p id="boldP">Lybrate Guarantee</p>
+        <p id="health">Your health & privacy matters the most to us!</p>
+        <div class="lybrate1 space">
+            <img id="image" src="https://l1.lybcdn.com/img/askQ/ic-ly-privacy.png" />
+            <p class="privacy">100% Privacy Protection</p>
+            <p class="maintain">We maintain your privacy and data confidentiality</p>
+        </div>
+        <div class="lybrate1">
+            <img id="image" src="https://l1.lybcdn.com/img/askQ/ic-ly-doctor.png" />
+            <p class="privacy">Verified Doctors</p>
+            <p class="maintain">All Doctors go through a stringent verification process</p>
+        </div>
+        <div class="lybrate1 bord">
+            <img id="image" src="https://l1.lybcdn.com/img/askQ/ic-ly-quick.png" />
+            <p class="privacy">Quick Responses</p>
+            <p class="maintain ">You will receive responses to your health queries within 6-24 hours</p>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer1  distance">
+            <p class="current">Currently Seeking Help</p>
+            <p class="numbers">3,000+</p>
+        </div>
+        <div class="footer1">
+            <p class="current">People Helped</p>
+            <p class="numbers">80,00,000+</p>
+        </div>
+        <div class="footer1">
+            <p class="current">Available Doctors</p>
+            <p class="numbers">100,000+</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="askAQuestion.js"></script>

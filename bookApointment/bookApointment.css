@@ -115,7 +115,43 @@ body a {
   color: white;
   border: none;
 }
-
+#filtersDropdown {
+  display: grid;
+  grid-template-columns: 24% 23% 34%;
+  grid-gap: 5px;
+  margin-left: 5%;
+  margin-top: 1px;
+}
+#filtersDropdown:hover {
+  cursor: pointer;
+}
+#cityDropdown,
+#localityDropdown,
+#SpecilizationDropdown {
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+}
+#cityDropdown p,
+#localityDropdown p,
+#SpecilizationDropdown p {
+  margin: 20px 0px 0px 10px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 209, 209);
+  border-bottom-width: thin;
+}
+#SpecilizationDropdown {
+  margin-left: 10px;
+}
+#SpecilizationDropdown i {
+  margin: 10px;
+}
+#cityDropdown,
+#localityDropdown,
+#SpecilizationDropdown {
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
 /* page navigation section */
 #pageNavigation {
   margin-top: 30px;
@@ -136,7 +172,7 @@ body a {
   margin-top: 20px;
   display: flex;
   margin-left: 71px;
-  margin-right: 400px;
+  margin-right: 362px;
 }
 #leftside {
   color: rgb(83, 83, 83);
@@ -145,7 +181,7 @@ body a {
 }
 #rightSide {
   color: rgb(172, 33, 33);
-  margin-left: 452px;
+  margin-left: 470px;
 }
 #rightSide a {
   color: rgb(184, 33, 33);
@@ -317,7 +353,7 @@ body a {
 }
 #leftArrow {
   position: absolute;
-  z-index: 100;
+  z-index: 95;
   margin-left: 20px;
   margin-top: 97px;
   color: rgba(53, 50, 50, 0.199);
@@ -335,7 +371,7 @@ body a {
 }
 #rightArrow {
   position: absolute;
-  z-index: 100;
+  z-index: 95;
   margin-left: 587px;
   margin-top: 84px;
   color: rgba(53, 50, 50, 0.199);

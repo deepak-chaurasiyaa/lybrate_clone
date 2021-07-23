@@ -314,6 +314,34 @@ function appendDoctors(doctorDetails) {
 }
 
 document.body.addEventListener('click', function (event) {
+
+    if (event.target.id == 'city') {
+        document.getElementById('cityDropdown').style.display = 'block';
+        document.getElementById('localityDropdown').style.display = 'none';
+        document.getElementById('SpecilizationDropdown').style.display = 'none';
+        document.getElementById('cityDropdown').style.width = '22.5%';
+    }
+    else if (event.target.id == 'locality') {
+        document.getElementById('cityDropdown').style.display = 'none';
+        document.getElementById('localityDropdown').style.display = 'block';
+        document.getElementById('SpecilizationDropdown').style.display = 'none';
+        document.getElementById('localityDropdown').style.width = '22.5%';
+        document.getElementById('localityDropdown').style.marginLeft = '22.9%';
+    }
+    else if (event.target.id == 'category') {
+        document.getElementById('cityDropdown').style.display = 'none';
+        document.getElementById('localityDropdown').style.display = 'none';
+        document.getElementById('SpecilizationDropdown').style.display = 'block';
+        document.getElementById('SpecilizationDropdown').style.width = '33%';
+        document.getElementById('SpecilizationDropdown').style.marginLeft = '46%';
+    }
+    else {
+        document.getElementById('cityDropdown').style.display = 'none';
+        document.getElementById('localityDropdown').style.display = 'none';
+        document.getElementById('SpecilizationDropdown').style.display = 'none';
+    }
+
+
     if (event.target.id == '2') {
         if (document.getElementById("2").checked == true) {
             document.getElementById('doctorsDetails').innerHTML = null;
@@ -334,6 +362,7 @@ document.body.addEventListener('click', function (event) {
         }
     }
     else if (document.getElementById("3").checked == false && document.getElementById("2").checked == false) {
+        document.getElementById('doctorsDetails').innerHTML = null;
         for (var j = 0; j < doctors.length; j++) {
             appendDoctors(doctors[j])
         }
