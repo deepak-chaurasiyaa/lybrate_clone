@@ -28,14 +28,14 @@ h1 {
   border: none;
 }
 #searchbarbutton {
-  height: 42.7px;
+  height: 40px;
   color: white;
   width: 130px;
   border: none;
   outline: none;
-
+  cursor: pointer;
   background-color: rgb(226, 19, 19);
-  margin-left: -12px;
+  margin-left: -6px;
 }
 #quickaction {
   display: flex;
