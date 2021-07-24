@@ -1,0 +1,169 @@
+* {
+  margin: 0px;
+  padding: 0%;
+}
+body {
+  background-color: rgb(160, 157, 157);
+  scroll-behavior: smooth;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* top navbar */
+#headImage {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 5px;
+  background: white;
+  align-items: center;
+}
+#headImage img {
+  margin-left: 300px;
+}
+#container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  margin-left: 0px;
+  font-size: 14px;
+}
+#container p {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+p a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+}
+#container p:hover {
+  cursor: pointer;
+}
+#container p:last-child {
+  background: red;
+  color: white;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 550;
+}
+#navigator {
+  margin-left: 20%;
+  margin-top: 10px;
+  color: rgb(179, 39, 39);
+}
+#navigator a {
+  color: black;
+}
+
+/* central div */
+#centraldiv {
+  display: grid;
+  grid-template-columns: 60% 30%;
+  margin-left: 20%;
+  grid-gap: 3%;
+  margin-top: 10px;
+}
+
+#availableQuestions p:nth-child(1),
+#availableQuestions p:nth-child(3) {
+  color: rgb(95, 95, 95);
+  font-size: 20px;
+  margin-top: 20px;
+}
+#questionCount,
+#answersCount {
+  font-size: 30px;
+  font-weight: 550;
+  margin: 10px;
+}
+
+.eachElement {
+  background: white;
+  width: 99%;
+  margin-top: 20px;
+}
+.dateOfPost {
+  padding-left: 20px;
+  padding-top: 10px;
+  text-decoration: underline;
+}
+.questionAsked,
+.response {
+  width: 90%;
+  font-weight: 550;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  overflow: wrap;
+}
+.response {
+  font-weight: 300;
+  font-size: 15px;
+  border: 1px solid rgba(250, 108, 108, 0.288);
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.SubmitAnswer {
+  margin-left: 56%;
+  width: 40%;
+  height: 40px;
+  margin-top: -3px;
+  background: rgb(27, 119, 27);
+  color: white;
+  font-size: 17px;
+}
+.SubmitAnswer:hover,
+.SubmitAnswer button:hover {
+  cursor: pointer;
+}
+.SubmitAnswer button {
+  height: 100%;
+  background: inherit;
+  color: white;
+  width: 65%;
+  border: none;
+}
+.SubmitAnswer i {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+/* ending and footer of page */
+#otherDetails {
+  background: rgb(88, 88, 88);
+  color: white;
+  margin-top: 30px;
+  height: 250px;
+}
+
+.detailsAndPages {
+  display: grid;
+  grid-template-columns: repeat(3, 21%);
+  justify-content: center;
+  grid-gap: 5%;
+}
+.detailsAndPages p {
+  color: rgb(153, 147, 147);
+}
+li {
+  list-style-type: none;
+  margin: 7px;
+}
+li a {
+  color: white;
+  font-size: 17px;
+}
+.social {
+  margin-top: 20px;
+  font-size: 30px;
+}
+.social a {
+  margin: 10px;
+  color: white;
+}
+
+/* copyright */
+#copyright {
+  margin-top: 30px;
+  text-align: center;
+}

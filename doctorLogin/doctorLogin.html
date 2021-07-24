@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lybrate | Connect with Doctors, Grow and Manage your Practice</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384- 
+    B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="doctorLogin.css">
+</head>
+
+<body>
+    <div id="headImage">
+        <img src="https://doctor.lybrate.com/img/lybrate-logo.png" alt="">
+    </div>
+    <!-- mobile login section -->
+    <div id="loginForm">
+        <p id="details">Please enter your mobile number to login</p>
+        <div id="firstPart">
+            <div id="code">
+                <p1>Country Code </p1>
+                <p>+91(IN)<i style="font-size:24px" class="fa">&#xf107;</i></p>
+            </div>
+            <div id="inputPart">
+                <input type="text" id="mobile" placeholder="Mobile Number">
+            </div>
+        </div>
+        <p id="forgot">FORGOT PASSWORD?</p>
+        <p id="email" onclick="DisplayNone()">LOGIN WITH EMAIL?</p>
+        <input type="checkbox" id="checkboxtype"><label for="">Keep me signed in on this
+            computer</label>
+        <button id="verify">VERIFY NOW</button>
+        <P id="newUser">NEW USER? REGISTER NOW</P>
+    </div>
+
+    <!-- email login section -->
+    <div id="loginForm2">
+        <p id="details">Please enter your email and password</p>
+        <input type="text" id="email2" placeholder="Email*">
+        <input type="password" id="password" placeholder="Password*">
+        <p id="forgot">FORGOT PASSWORD?</p>
+        <p id="email">LOGIN WITH MOBILE?</p>
+        <input type="checkbox" id="checkboxtype"><label for="">Keep me signed in on this
+            computer</label>
+        <button id="verif2" onclick="authenticate()">LOGIN</button>
+        <P id="newUser">NEW USER? REGISTER NOW</P>
+    </div>
+</body>
+
+</html>
+
+<script src="doctorLogin.js"></script>

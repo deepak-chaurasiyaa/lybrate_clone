@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(228, 227, 227);
+}
+#headImage {
+  background: white;
+  box-shadow: 1px 1px 2px grey;
+}
+#headImage img {
+  margin-left: 180px;
+  margin-top: 10px;
+  height: 40px;
+}
+#loginForm,
+#loginForm2 {
+  margin-left: 29%;
+  background: white;
+  width: 40%;
+}
+#details {
+  margin: 20px;
+  padding-top: 10px;
+  font-size: 17px;
+}
+#firstPart {
+  display: grid;
+  grid-template-columns: 26% 70%;
+}
+#code,
+#code p {
+  /* border: 1px solid red; */
+  margin: 17px;
+  padding-top: 5px;
+  /* margin-right: px; */
+  display: inline-block;
+}
+#code p {
+  margin-top: 0px;
+  float: left;
+  width: 90%;
+  color: grey;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 209, 209);
+  border-bottom-width: thin;
+}
+#code p i {
+  margin-left: 15px;
+}
+#mobile {
+  margin-top: 55px;
+  border: none;
+  outline: none;
+  width: 99%;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 209, 209);
+  border-bottom-width: thin;
+  color: grey;
+}
+#forgot,
+#email {
+  margin: 17px;
+  margin-top: 0px;
+  padding: 10px;
+  font-size: 14px;
+  color: red;
+}
+#email:hover,
+#forgot:hover,
+#verif2:hover {
+  cursor: pointer;
+}
+#email {
+  margin-top: -25px;
+}
+#checkboxtype {
+  margin: 20px;
+  padding: 0px;
+}
+#checkboxtype ~ label {
+  margin-left: -10px;
+  margin-right: 40%;
+  color: grey;
+  /* padding: 20px; */
+}
+button {
+  background: rgb(197, 26, 26);
+  width: 90%;
+  margin-left: 4%;
+  font-size: 16px;
+  color: white;
+  border: none;
+  outline: none;
+  height: 40px;
+  text-align: center;
+}
+#newUser {
+  font-size: 14px;
+  margin-left: 30%;
+  color: rgb(190, 39, 39);
+  padding-bottom: 30px;
+}
+
+#email2,
+#password {
+  margin-top: 50px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+  width: 92%;
+  margin-left: 20px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 209, 209);
+  border-bottom-width: thin;
+  color: grey;
+}

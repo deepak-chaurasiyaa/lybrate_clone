@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0%;
+}
+body {
+  background-color: rgb(238, 236, 236);
+  scroll-behavior: smooth;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body a {
+  text-decoration: none;
+}
+/* top navbar */
+.navbar-top {
+  margin-top: 2px;
+  text-align: right;
+}
+.navbar-top span a {
+  margin: 15px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: rgb(87, 87, 87);
+  font-size: 15px;
+}
+.navbar-top span:last-child {
+  margin-right: 78px;
+}
+
+/* container navbar */
+.navbar-container {
+  display: grid;
+  grid-template-columns: 25% 60% 13%;
+  background: white;
+  padding: 10px;
+  height: 50px;
+  margin-top: 5px;
+  align-items: center;
+}
+#image-logo {
+  margin-right: 100px;
+  margin-left: 0%;
+
+  text-align: center;
+}
+#image-logo img {
+  width: 130px;
+  margin-left: 0%;
+}
+#logos a:last-child {
+  float: right;
+}
+.content {
+  float: right;
+  margin-left: 221px;
+}
+.content a {
+  margin: 13px;
+  color: rgb(63, 63, 63);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.content a img {
+  margin: 1px;
+  margin-bottom: -10px;
+}
+#logo {
+  width: 100px;
+  margin-left: -30px;
+  color: white;
+  background: rgb(192, 20, 20);
+  padding: 10px;
+  border-radius: 50px;
+  text-align: left;
+  height: 27px;
+}
+#logo p {
+  font-size: 13px;
+  text-align: center;
+  margin-top: -3px;
+}
+
+#logo span {
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: 0;
+  margin-left: 11px;
+  text-align: center;
+}
+#logos a:last-child {
+  margin-top: -50px;
+  margin-left: -30px;
+}
+
+/* search and filter bar section */
+#searchSection {
+  margin: 15px -57px 0 70px;
+}
+#searchSection input {
+  height: 35px;
+  width: 22%;
+  outline: none;
+  border: none;
+  font-size: 17px;
+  padding: 5px;
+}
+#searchSection :nth-child(3) {
+  width: 33%;
+}
+#searchSection button {
+  width: 10%;
+  height: 45px;
+  background: rgb(192, 14, 14);
+  font-size: 20px;
+  color: white;
+  border: none;
+}
+#filtersDropdown {
+  display: grid;
+  grid-template-columns: 24% 23% 34%;
+  grid-gap: 5px;
+  margin-left: 5%;
+  margin-top: 1px;
+}
+#filtersDropdown:hover {
+  cursor: pointer;
+}
+#cityDropdown,
+#localityDropdown,
+#SpecilizationDropdown {
+  background-color: white;
+  box-shadow: 1px 1px 1px;
+}
+#cityDropdown p,
+#localityDropdown p,
+#SpecilizationDropdown p {
+  margin: 20px 0px 0px 10px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(212, 209, 209);
+  border-bottom-width: thin;
+}
+#SpecilizationDropdown {
+  margin-left: 10px;
+}
+#SpecilizationDropdown i {
+  margin: 10px;
+}
+#cityDropdown,
+#localityDropdown,
+#SpecilizationDropdown {
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+/* page navigation section */
+#pageNavigation {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  margin-left: 72px;
+  position: relative;
+  font-size: 13px;
+  z-index: 2;
+}
+#pageNavigation a {
+  text-decoration: none;
+  font-size: 13px;
+  color: red;
+}
+
+/* page info */
+#info {
+  margin-top: 20px;
+  display: flex;
+  margin-left: 71px;
+  margin-right: 362px;
+}
+#leftside {
+  color: rgb(83, 83, 83);
+  font-size: 20px;
+  font-weight: 530;
+}
+#rightSide {
+  color: rgb(172, 33, 33);
+  margin-left: 470px;
+}
+#rightSide a {
+  color: rgb(184, 33, 33);
+  text-decoration: underline;
+}
+
+/* left section and filters */
+#leftSection {
+  margin-top: 16px;
+  float: left;
+  margin-left: 71px;
+  background-color: white;
+  width: 19%;
+}
+#headerLeft {
+  display: grid;
+  grid-template-columns: 50% 40%;
+  font-size: 18px;
+  font-weight: 550;
+  align-items: center;
+  height: 60px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(219, 217, 217);
+  border-bottom-width: thin;
+}
+#headerLeft p {
+  margin-left: 15px;
+}
+#clearAll {
+  color: rgb(199, 28, 28);
+}
+#formItem {
+  padding: 15px;
+}
+#formItem p {
+  font-size: 14px;
+  margin-top: 20px;
+}
+#filterForm {
+  margin-top: 12px;
+  font-size: 13px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(219, 217, 217);
+  border-bottom-width: thin;
+}
+#filterForm label,
+#availabilityFilter label,
+#GenderFilter label {
+  margin-left: 13px;
+}
+#filterForm span,
+#availabilityFilter span,
+#GenderFilter span {
+  display: block;
+  width: 100%;
+  margin: 20px 0 20px 0;
+  font-size: 12px;
+}
+#days {
+  border: 1px solid rgb(212, 210, 210);
+}
+#days p {
+  display: inline-block;
+  height: 27px;
+  width: 25px;
+  margin-left: 2px;
+  text-align: center;
+}
+#days p:nth-child(1) {
+  color: green;
+  height: 30px;
+  width: 28px;
+  font-size: 17px;
+  background: rgb(214, 214, 214);
+}
+#availabilityFilter,
+#clinic,
+#GenderFilter {
+  border-bottom-style: solid;
+  border-bottom-color: rgb(219, 217, 217);
+  border-bottom-width: thin;
+}
+#clinic span {
+  margin-left: 120px;
+  font-size: 13px;
+}
+
+/* <!-- middle and result of filters section and list of doctors with their details --> */
+#middleContainer {
+  /* height: 1500px; */
+  width: 47%;
+  /* border: 1px solid red; */
+  margin-left: 344px;
+  margin-top: 16px;
+}
+
+/* recommended dection */
+#slidingHospitalDetails {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 15% 50% 32%;
+  padding: 10px;
+  background: white;
+  z-index: 8;
+}
+.hospitalLogo img {
+  width: 80%;
+  padding: 5%;
+}
+.hospitalDiv {
+  width: 90%;
+  padding: 5px;
+}
+.hospitalName {
+  font-size: 20px;
+  font-weight: 550;
+  /* padding: 5px; */
+}
+.hospitalCatg {
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.hospitalAdd {
+  font-size: 17px;
+}
+.hospitalImages img {
+  margin: 5px 3px 0px 0px;
+}
+.experienceDiv {
+  margin-top: 25px;
+  font-size: 15px;
+  color: rgb(167, 163, 163);
+}
+.experienceDiv p {
+  color: rgb(32, 32, 32);
+}
+.experienceDiv p > i {
+  margin: 5px;
+  color: grey;
+}
+.buttonsDiv {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  height: 50px;
+}
+.buttonsDiv :hover {
+  cursor: pointer;
+}
+.buttonsDiv button {
+  font-size: 16px;
+  font-weight: 550;
+  border: 1px solid rgb(202, 202, 202);
+  background: rgb(231, 231, 231);
+}
+
+.buttonsDiv button i {
+  margin: 10px;
+  color: grey;
+  font-size: 12px;
+}
+
+.buttonsDiv button:last-child {
+  background: rgb(14, 155, 14);
+  color: white;
+}
+.buttonsDiv button:last-child i {
+  color: white;
+}
+#leftArrow {
+  position: absolute;
+  z-index: 95;
+  margin-left: 20px;
+  margin-top: 97px;
+  color: rgba(53, 50, 50, 0.199);
+  background: rgb(196, 194, 194);
+}
+#leftArrow i {
+  height: 55px;
+  font-weight: 600;
+  width: 35px;
+  text-align: center;
+}
+#leftArrow,
+#rightArrow :hover {
+  cursor: pointer;
+}
+#rightArrow {
+  position: absolute;
+  z-index: 95;
+  margin-left: 587px;
+  margin-top: 84px;
+  color: rgba(53, 50, 50, 0.199);
+  background: rgb(196, 194, 194);
+}
+#rightArrow i {
+  height: 55px;
+  width: 35px;
+  text-align: center;
+}
+/* each doctor details on search */
+
+.eachdiv {
+  display: grid;
+  grid-template-columns: 15% 55% 30%;
+  padding: 10px;
+  background: white;
+  margin-top: 20px;
+}
+.doctorLogo img {
+  border-radius: 250px;
+  margin-top: 50px;
+  width: 75%;
+  padding: 0;
+}
+.buttonsDoctor {
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+}
+.doctorDiv p {
+  margin: 4px;
+}
+.doctorName {
+  font-size: 18px;
+  font-weight: 550;
+}
+.degree:hover {
+  cursor: pointer;
+  color: rgb(163, 30, 30);
+}
+.Catg {
+  text-decoration: underline;
+}
+.Add {
+  color: rgb(70, 70, 107);
+}
+.recentConsult {
+  color: grey;
+  font-size: 17px;
+}
+.recentConsult ~ p {
+  color: rgb(10, 10, 10);
+}
+.experienceDiv2 {
+  margin-top: 2px;
+  font-size: 15px;
+  color: rgb(167, 163, 163);
+}
+.experienceDiv2 p {
+  color: rgb(32, 32, 32);
+  font-size: 13px;
+  /* margin-left: 10px; */
+}
+.experienceDiv2 p > i {
+  margin: 5px;
+  color: grey;
+}
+/* right section of page */
+/* related feed post */
+#relatedFeed {
+  background: white;
+  color: rgb(92, 91, 91);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 1px 1px 2px;
+}
+#relatedFeed :nth-child(1) {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+#relatedFeed :nth-child(2) {
+  margin: 13px 0 13px 0;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(194, 194, 194);
+  border-bottom-width: thin;
+  font-size: 14px;
+  padding-bottom: 15px;
+  color: rgb(31, 30, 30);
+}
+#relatedFeed :nth-child(3) {
+  text-align: center;
+  color: rgb(31, 30, 30);
+}
+/* qna section */
+#rightSection {
+  margin-top: 17px;
+  width: 20%;
+  height: 300px;
+  margin-right: 90px;
+  float: right;
+}
+
+#qnaSection {
+  font-size: 1.5em;
+  background: white;
+  height: 290px;
+  border: 1px solid rgb(238, 6, 6);
+}
+#qnaSection i {
+  float: left;
+  margin-right: 17px;
+}
+.qnaHead {
+  margin: 20px;
+}
+.qnaHead p {
+  margin-top: -5px;
+  font-weight: 600;
+}
+#email {
+  color: rgb(185, 8, 8);
+}
+.qnaDesc {
+  font-size: 12px;
+  margin-left: 60px;
+  margin-top: -20px;
+  margin-right: 30px;
+}
+#qnaSection textarea {
+  border: 1px solid rgb(202, 198, 198);
+  height: 150px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 15px;
+  font-size: 15px;
+  outline: none;
+}
+#footer {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.lastDesc {
+  display: flex;
+  align-items: center;
+  background-color: rgb(236, 233, 233);
+  font-size: 15px;
+}
+#footer button {
+  background: rgb(196, 18, 18);
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+/*    health tips section */
+#tips {
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 1px 1px 0.5px;
+}
+#tips h1 {
+  font-size: 17px;
+  color: rgb(99, 98, 98);
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: inherit;
+}
+.tipItem {
+  margin-top: 15px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(194, 194, 194);
+  border-bottom-width: thin;
+}
+.tipItem:hover {
+  cursor: pointer;
+}
+.tipItem p {
+  float: left;
+  width: 60%;
+  padding: 5px;
+  font-size: 14px;
+}
+.tipItem img {
+  margin-bottom: 13px;
+}
+
+/* ending and footer of page */
+#otherDetails {
+  background: rgb(88, 88, 88);
+  color: white;
+  margin-top: 30px;
+  height: 250px;
+}
+
+.detailsAndPages {
+  display: grid;
+  grid-template-columns: repeat(3, 24%);
+  justify-content: center;
+  grid-gap: 5%;
+}
+.detailsAndPages p {
+  color: rgb(153, 147, 147);
+}
+li {
+  list-style-type: none;
+  margin: 7px;
+}
+li a {
+  color: white;
+  font-size: 17px;
+}
+.social {
+  margin-top: 20px;
+  margin-left: 80px;
+  font-size: 30px;
+}
+.social a {
+  margin: 10px;
+  color: white;
+}
+
+/* copyright */
+#copyright {
+  margin-top: 30px;
+  text-align: center;
+}
