@@ -1,0 +1,279 @@
+body {
+  background-color: rgb(240, 230, 230);
+}
+#divHead {
+  float: left;
+  width: 100%;
+  height: 50px;
+}
+#logo {
+  height: 50px;
+  width: 100px;
+  margin-top: -1px;
+  float: left;
+  margin-left: 5%;
+}
+input {
+  float: left;
+  margin-left: 50px;
+  width: 49%;
+  height: 30px;
+  background-color: rgb(179, 168, 168);
+  border: 1px solid rgb(190, 165, 165);
+}
+#para1,
+#plus,
+#btn1,
+#cart {
+  margin-left: 20px;
+  float: left;
+  margin-top: 10px;
+}
+#para2 {
+  margin-left: 6px;
+  float: left;
+  margin-top: 3px;
+}
+#cart {
+  height: 30px;
+  width: 40px;
+}
+/* just try from here and look in sign up dropDown an next make all the div part  */
+#para1 a {
+  color: black;
+  display: block;
+  height: 15px;
+  font-family: lato;
+  text-decoration: none;
+  align-items: center;
+}
+
+#para1 ul {
+  list-style: none;
+  display: flex;
+}
+#para1 li {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+#para1 li:hover .subMenu > li {
+  display: block;
+  top: 0px;
+}
+.subMenu li {
+  display: none;
+}
+.subMenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+#shopByCategory {
+  height: 40px;
+  width: 100%;
+  background-color: black;
+  color: white;
+  clear: both;
+  margin-top: -10px;
+}
+#shopByCategory {
+  justify-content: center;
+  margin: auto;
+}
+#mainDiv a {
+  color: black;
+  display: block;
+  height: 32px;
+  font-family: lato;
+  align-items: center;
+  text-decoration: none;
+}
+
+#mainDiv ul {
+  list-style: none;
+  display: flex;
+}
+#mainDiv li {
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+#mainDiv li:hover .subDiv1 > li {
+  display: block;
+  top: 0px;
+}
+.subDiv1 li {
+  display: none;
+  position: absolute;
+  top: 0px;
+}
+.subDiv1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+}
+.subDiv1 > li {
+  border: 1px solid rgb(235, 229, 229);
+  background-color: white;
+}
+.arrow {
+  margin-top: 15px;
+
+  font-size: large;
+}
+.head {
+  color: white !important;
+  margin-top: 10px;
+  border: none;
+}
+.head1 {
+  margin-top: 10px;
+  color: white !important;
+  border: none;
+}
+
+.slideImg {
+  height: 300px;
+  width: 90%;
+  margin-left: 5%;
+}
+#newDiv {
+  margin-top: 10px;
+  margin-left: 5%;
+  width: 45%;
+  height: 600px;
+
+  float: left;
+  background-color: blanchedalmond;
+}
+#Exclusive {
+  font-family: sans-serif;
+  font-size: large;
+  float: left;
+  margin-left: 5%;
+}
+#gold {
+  font-weight: 800;
+  font-size: small;
+}
+#view {
+  float: right;
+  font-weight: 500;
+  text-decoration: dotted underline;
+  margin-right: 5%;
+  background-color: blanchedalmond;
+}
+#div1 {
+  margin-top: 10px;
+  float: left;
+  height: 600px;
+  width: 45%;
+  background-color: white;
+  border: 1px solid white;
+  margin-left: 1%;
+}
+.img1 {
+  margin-left: 5%;
+}
+.img2 {
+  margin-left: 2px;
+}
+.img1,
+.img2 {
+  height: 530px;
+  width: 45%;
+  float: left;
+  background-color: white;
+  justify-content: center;
+}
+.nirgun {
+  margin-left: 80px;
+  margin-top: 180px;
+}
+.rs {
+  color: red;
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+}
+.line {
+  color: black;
+  text-decoration: line-through;
+  margin-left: 20px;
+  font-size: small;
+}
+.nirgun + p {
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+}
+.div1_1,
+.div1_2,
+.div1_3,
+.div1_4 {
+  float: left;
+  height: 270px;
+  width: 49.66%;
+  border: 1px solid rgb(216, 192, 192, 0.5);
+}
+.products {
+  margin-left: 80px;
+  margin-top: 40px;
+}
+.name {
+  text-align: center;
+  font-weight: bold;
+}
+.newPrice {
+  text-align: center;
+  color: red;
+  font-weight: 700;
+}
+.oldPrice {
+  color: grey;
+  text-decoration: line-through;
+  font-weight: normal;
+}
+.off {
+  color: green;
+  font-weight: normal;
+  margin-left: 5px;
+}
+.div2_1 {
+  margin-left: 5%;
+
+  margin-top: 15px;
+}
+.shopNow {
+  float: left;
+  height: 250px;
+  width: 30%;
+  padding: 6px;
+}
+.heading {
+  color: rgb(90, 78, 78);
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.para {
+  color: rgb(95, 88, 88);
+  font-family: sans-serif;
+  font-size: small;
+}
+#footer {
+  background-color: gray;
+}
+.last {
+  margin-left: 10%;
+}
+.para {
+  color: rgb(182, 170, 170);
+}
+.two {
+  color: antiquewhite;
+  margin-top: -1px !important;
+}

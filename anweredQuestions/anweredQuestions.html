@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384- 
     B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="prescription.css">
+    <link rel="stylesheet" href="anweredQuestions.css">
 </head>
 
 <body>
@@ -18,23 +18,21 @@
         </div>
         <div id="container">
             <p><a href="../health_feed/health_feed.html">Health Feed</a></p>
-            <p style="cursor: pointer" onclick="answersPage()">SUBMITTED ANSWERS</p>
-            <p style="cursor: pointer">View Profile</p>
+            <p style="font-size: 18px;" onclick="questionsPage()">Questions</p>
+            <p>View Profile</p>
         </div>
     </div>
 
     <!-- page navigator -->
-    <div id="navigator">Home <a>></a> Questions</div>
+    <div id="navigator">Home <a>></a> Answers</div>
 
-
+    <!-- central section of page -->
     <div id="centraldiv">
         <!-- questions and answers section -->
         <div id="qnaPart">
         </div>
         <!-- questions count -->
         <div id="availableQuestions">
-            <p>AVAILABLE QUESTIONS</p>
-            <p id="questionCount">0</p>
             <p>ANSWERED QUESTIONS</p>
             <P id="answersCount">0</P>
         </div>
@@ -79,4 +77,4 @@
 
 </html>
 
-<script src="prescription.js"></script>
+<script src="anweredQuestions.js"></script>

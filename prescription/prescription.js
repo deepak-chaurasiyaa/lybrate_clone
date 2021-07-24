@@ -1,5 +1,7 @@
 let id = 1;
 
+let availableques = 1;
+let answeredques = 1;
 function addQuery(ele) {
     let qnaPart = document.getElementById('qnaPart');
 
@@ -18,6 +20,7 @@ function addQuery(ele) {
     let answer = document.createElement('textarea');
     answer.rows = '10';
     answer.cols = '80';
+    answer.placeholder = 'Prescription.....'
     answer.setAttribute('id', id++)
 
 
@@ -37,7 +40,13 @@ function addQuery(ele) {
 
 let questions = JSON.parse(localStorage.getItem('questions'))
 for (var k = questions.length - 1; k >= 0; k--) {
-    addQuery(questions[k])
+    if (questions[k]['answered'] == undefined) {
+        addQuery(questions[k])
+        document.getElementById('questionCount').innerHTML = availableques++;
+    }
+    else {
+        document.getElementById('answersCount').innerHTML = answeredques++;
+    }
 }
 
 
@@ -46,12 +55,18 @@ function submitAnswer(ans) {
     if (answer != '') {
         let ques = document.getElementById(ans - 2).innerHTML;
         let storedQues = JSON.parse(localStorage.getItem('questions'));
-        for (var i = 0; i < storedQues.length; i++) {
-            if (storedQues[i].question == ques) {
-                storedQues[i]['answered'] = answer;
-                localStorage.setItem('questions', JSON.stringify(storedQues))
-                break
+        for (let i = 0; i < storedQues.length; i++) {
+            if (storedQues[i]['answered'] == undefined) {
+                if (storedQues[i].question == ques) {
+                    storedQues[i]['answered'] = answer;
+                    localStorage.setItem('questions', JSON.stringify(storedQues));
+                    break
+                }
             }
         }
     }
+}
+
+function answersPage() {
+    window.location.href = '../anweredQuestions/anweredQuestions.html'
 }

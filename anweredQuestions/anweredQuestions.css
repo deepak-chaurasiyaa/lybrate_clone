@@ -85,7 +85,8 @@ p a {
   padding-top: 10px;
   text-decoration: underline;
 }
-.questionAsked {
+.questionAsked,
+.response {
   width: 90%;
   font-weight: 550;
   font-size: 18px;
@@ -95,18 +96,16 @@ p a {
   padding-right: 10px;
   overflow: wrap;
 }
-textarea {
-  border: 1px solid rgba(241, 62, 62, 0.486);
-  outline: none;
-  margin-left: 4%;
-  padding: 12px 20px;
-  width: 92%;
-  box-sizing: border-box;
-  border-radius: 5px;
+.response {
+  font-weight: 300;
+  font-size: 15px;
+  border: 1px solid rgba(250, 108, 108, 0.288);
+  margin-left: 10px;
+  margin-bottom: 3px;
 }
 .SubmitAnswer {
   margin-left: 56%;
-  width: 37%;
+  width: 40%;
   height: 40px;
   margin-top: -3px;
   background: rgb(27, 119, 27);
@@ -121,7 +120,7 @@ textarea {
   height: 100%;
   background: inherit;
   color: white;
-  width: 60%;
+  width: 65%;
   border: none;
 }
 .SubmitAnswer i {
