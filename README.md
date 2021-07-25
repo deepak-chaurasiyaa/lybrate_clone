@@ -7,7 +7,7 @@ TOOLS AND TECHNOLOGY USED >
 HTML, css, javascript , js dom manipulation, font Awesom icons
 
 WEBSITE CONTENT CLONED>
-here the bookApointment, consultOnline, goodCart, login/signup, healthfeed and doctors sections are the part we have majorly focused to clone(create)
+here the home, bookApointment, consultOnline, goodCart, login/signup, healthfeed and doctors sections are the part we have majorly focused to clone(create)
 
 WEBSITE USER FLOW >
 the user flow that we tried to maintain is,
