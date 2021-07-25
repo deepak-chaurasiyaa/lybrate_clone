@@ -33,7 +33,7 @@ function startLogin(event) {
                     // checking password is correct or not
                     if (x.userPas == password) {
                         found = true;
-                        window.location.href = '../askAQuestion/askAQuestion.html'
+                        window.location.href = '../haltpage/haltpage.html'
                         // alert('Successfully Log in !')
                     }
                     else {

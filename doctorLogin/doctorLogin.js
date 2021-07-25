@@ -20,7 +20,7 @@ function authenticate() {
         else if (password != 'sagar_ankur')
             alert('Enter correct password!');
         else {
-            window.location.href = '../prescription/prescription.html';
+            window.location.href = 'haltpage.html';
         }
     }
 }
