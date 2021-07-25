@@ -1,6 +1,7 @@
 # lybrate_clone
 
 welcome to this repo,
+
 as part of unit2 construct week our team(sagar, deepak, ankur and harsh) was asigned a task to clone the website lybrate(https://www.lybrate.com/?lpt=NAV), we have worked 4 days straight day and night and given our best to clone in the best possible way we can.
 
 TOOLS AND TECHNOLOGY USED >
