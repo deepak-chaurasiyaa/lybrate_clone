@@ -96,3 +96,9 @@ for (var k = questions.length - 1; k >= 0; k--) {
     if (questions[k]['answered'] != undefined)
         appendPost(questions[k])
 }
+
+
+function gotoHome() {
+    console.log('here')
+    window.location.href = "../Home/index.html"
+}

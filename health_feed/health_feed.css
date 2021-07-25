@@ -116,23 +116,31 @@ body a {
 
 /* drop down search bar */
 #dropDown {
-  height: 222px;
-  background: rgb(226, 224, 224);
+  /* height: 222px; */
+  background: rgb(255, 255, 255);
   width: 65%;
   font-size: 18px;
   margin-left: 80px;
-  margin-top: -7px;
-  box-shadow: 5px 5px 20px;
+  margin-top: 0px;
+  box-shadow: 1px 1px 1px;
   position: absolute;
   z-index: 99;
   display: none;
 }
 #dropDown li {
-  border: 0.5px solid rgb(209, 206, 206);
+  border-bottom-style: solid;
+  border-bottom-color: rgb(231, 227, 227);
+  border-bottom-width: thin;
   margin: 0%;
   height: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 14px;
 }
-
+#dropDown li:hover {
+  background: rgb(248, 248, 248);
+  cursor: pointer;
+}
 #pageNavigation {
   margin-top: 40px;
   margin-bottom: 15px;
@@ -216,7 +224,7 @@ body a {
   margin-top: 30px;
   width: 25%;
   height: 300px;
-  margin-right: 80px;
+  margin-right: 6%;
   float: right;
 }
 
@@ -282,7 +290,7 @@ body a {
 
 /* blog and posts container */
 #blogContainer {
-  margin-left: 80px;
+  margin-left: 6%;
   width: 61%;
 }
 .containerPost {
