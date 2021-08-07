@@ -15,10 +15,10 @@ here the home, bookApointment, consultOnline, goodCart, login/signup, healthfeed
 Home Page
 ![Home](images/home.png)
 
-health feed Page
+health feed
 ![Home](images/healthfeeed.png)
 
-health feed Page
+aslk question to doctor
 ![Home](images/askques.png)
 
 WEBSITE USER FLOW >
