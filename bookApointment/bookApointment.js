@@ -341,9 +341,26 @@ document.body.addEventListener('click', function (event) {
         document.getElementById('SpecilizationDropdown').style.display = 'none';
     }
 
-
+    // filter functionality
+    // if event came from 2
     if (event.target.id == '2') {
-        if (document.getElementById("2").checked == true) {
+        // if 3 in also on
+        if (document.getElementById("3").checked == true) {
+            document.getElementById('doctorsDetails').innerHTML = null;
+            for (var j = 0; j < doctors.length; j++) {
+                if (doctors[j].adress == 'Green Park')
+                    appendDoctors(doctors[j])
+            }
+            // alos 2 is active
+            if (document.getElementById("2").checked == true) {
+                for (var j = 0; j < doctors.length; j++) {
+                    if (doctors[j].adress == 'Janakpuri')
+                        appendDoctors(doctors[j])
+                }
+            }
+        }
+        // only 2 is active
+        else if (document.getElementById("2").checked == true) {
             document.getElementById('doctorsDetails').innerHTML = null;
             for (var j = 0; j < doctors.length; j++) {
                 if (doctors[j].adress == 'Janakpuri')
@@ -351,15 +368,35 @@ document.body.addEventListener('click', function (event) {
             }
         }
 
+
     }
+
+    // if event came from 3
     else if (event.target.id == '3') {
-        if (document.getElementById("3").checked == true) {
+        // if 2 is active
+        if (document.getElementById("2").checked == true) {
+            document.getElementById('doctorsDetails').innerHTML = null;
+            for (var j = 0; j < doctors.length; j++) {
+                if (doctors[j].adress == 'Janakpuri')
+                    appendDoctors(doctors[j])
+            }
+            // if 3 is also active with 2
+            if (document.getElementById("3").checked == true) {
+                for (var j = 0; j < doctors.length; j++) {
+                    if (doctors[j].adress == 'Green Park')
+                        appendDoctors(doctors[j])
+                }
+            }
+        }
+        // only 3 is active
+        else if (document.getElementById("3").checked == true) {
             document.getElementById('doctorsDetails').innerHTML = null;
             for (var j = 0; j < doctors.length; j++) {
                 if (doctors[j].adress == 'Green Park')
                     appendDoctors(doctors[j])
             }
         }
+
     }
     else if (document.getElementById("3").checked == false && document.getElementById("2").checked == false) {
         document.getElementById('doctorsDetails').innerHTML = null;

@@ -10,57 +10,61 @@
 </head>
 
 <body>
-    <!-- top navbar -->
-    <div class="navbar-top">
-        <span><a href="">Get the App</a></span>
-        <span><a href="../doctorLogin/doctorLogin.html">For Doctors</a></span>
-        <span><a href="">Health Feed</a></span>
-        <span><a href="../login/login.html">Login/Sign-up</a></span>
-    </div>
-
-    <!-- container navbar -->
-    <div class="navbar-container">
-        <div id="image-logo" style="cursor: pointer;" onclick="gotoHome()"><img
-                src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png" alt="logo">
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <a href="https://www.lybrate.com/mobile?lpt=HOME">Get the App</a>
+                <a href="../ForDoctors/fordoctors.html">For Doctors</a>
+                <a href="../health_feed/health_feed.html">Health Feed</a>
+                <a href="../login/login.html">Login/Sign-up</a>
+            </div>
         </div>
 
-        <div class="content">
-            <a href="../login/login.html">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png"
-                    alt="">
-                <span>Ask a Question</span>
-            </a>
-            <a href="../bookApointment/bookApointment.html">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png"
-                    alt="">
-                Book Appointment
-            </a>
-            <a href="url">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png"
-                    alt="">
-                Consult Online
-            </a>
-            <a href="url">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png"
-                    alt="">
-                Book Lab Test
-            </a>
-        </div>
-
-        <div id="logos">
-            <a href="../good_kart/goodCart.html">
-                <div id="logo">
-                    <p>Lybrate </p> <span>goodKart</span>
+        <div class="logo_and_nav_section" style="background: white;">
+            <div class="container">
+                <div class="logo_container">
+                    <img class="logo"
+                        src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png"
+                        alt="lybrate">
                 </div>
-            </a>
-            <a href="url">
-                <i class="fas fa-shopping-cart"
-                    style="color: rgb(202, 22, 22); font-size: 35px; margin-left: -50px;"></i>
 
-            </a>
+                <div class="nav_and_cart_section">
+                    <nav class="navigation_menu">
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png"
+                                alt="">
+                            <a href="../login/login.html">Ask a Question</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png"
+                                alt="">
+                            <a href="../bookApointment/bookApointment.html">Book Appointment</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png"
+                                alt="">
+                            <a href="../consultonline/consultonline.html">Consult Online</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png"
+                                alt="">
+                            <a href="#">Book Lab Test</a>
+                        </div>
+                    </nav>
+
+                    <div class="goodcart_and_cart_section">
+                        <button>
+                            <img src="../images/goodcart.png" alt="" onclick="gotoCart()">
+                        </button>
+
+                        <div class="cart_img_container">
+                            <img src="../images/cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-
+    </header>
     <!-- social media links -->
     <div id="socialmedia">
         <a href="https://www.facebook.com/"><i id="facebook" class="fa fa-facebook"></i></a>
@@ -92,19 +96,30 @@
 
     <!-- question ansswer section -->
     <div id="rightSection">
-        <div id="qnaSection">
-            <div class="qnaHead">
-                <i id="email" class="fa fa-envelope icon"></i>
-                <p>Ask a question</p>
-            </div>
-            <div class="qnaDesc">Get FREE multiple opinions from Doctors</div>
-            <textarea name="" id="qnaQuestion" cols="30" rows="10"
-                placeholder="Enter questions for you or someone else. E.g. my left eye is red and swollen..."></textarea>
-            <div id="footer">
-                <p class="lastDesc">Posted anoynymously</p>
-                <button>Submit</button>
+        <div class="rightTop">
+            <div class="questionBox">
+                <div class="questionHead">
+                    <div>
+                        <i id="email" class="fa fa-envelope icon"></i>
+                    </div>
+                    <div>
+                        <h2>Ask a FREE Question</h2>
+                        <p style="font-size: 14px; margin-top: 4px; color: rgb(58, 57, 57);">Get a Free multiple
+                            opinions from Doctors</p>
+                    </div>
+
+                </div>
+                <div class="description">
+                    <textarea name="" id="" cols="5" rows="6"
+                        placeholder="Enter questio for you or someone else. E.g. my left eye is red and swollen..."></textarea>
+                    <div class="lastPart">
+                        <p>Posted anonymously</p>
+                        <p>Submit</p>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- image part -->
         <div class="rightBottom">
             <a href="covidPage">
                 <img src="https://assets.lybrate.com/q_auto,f_auto/rio/800x800/Lybrate_Covid-Care_Banner_320x235_18-05-2021.jpg"

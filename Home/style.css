@@ -3,7 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+input{
+outline:none;
+}
 html,
 body {
   width: 100%;

@@ -15,9 +15,9 @@ function authenticate() {
     else if (password == '')
         alert('Enter pasword to proceed');
     else {
-        if (userPhone != 'sagar@ankur.com')
+        if (userPhone != 'h@r.com')
             alert('Enter correct email!');
-        else if (password != 'sagar_ankur')
+        else if (password != '12')
             alert('Enter correct password!');
         else {
             window.location.href = 'haltpage.html';
