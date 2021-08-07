@@ -16,7 +16,7 @@ Home Page
 ![Home](images/home.png)
 
 health feed Page
-![Home](images/healthfeed.png)
+![Home](images/healthfeeed.png)
 
 health feed Page
 ![Home](images/askques.png)
