@@ -10,7 +10,7 @@ HTML, css, javascript , js dom manipulation, font Awesom icons
 
 Some of pages are
 
-[Home](../images/home.png)
+![Home](images/home.png)
 
 WEBSITE CONTENT CLONED>
 
