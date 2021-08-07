@@ -8,6 +8,10 @@ TOOLS AND TECHNOLOGY USED >
 
 HTML, css, javascript , js dom manipulation, font Awesom icons
 
+Some of pages are
+
+![Home](../images/home.png)
+
 WEBSITE CONTENT CLONED>
 
 here the home, bookApointment, consultOnline, goodCart, login/signup, healthfeed and doctors sections are the part we have majorly focused to clone(create)
