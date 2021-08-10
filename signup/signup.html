@@ -10,56 +10,62 @@
 </head>
 
 <body>
-    <!-- top navbar -->
-    <div class="navbar-top">
-        <span><a href="">Get the App</a></span>
-        <span><a href="">For Doctors</a></span>
-        <span><a href="../health_feed/health_feed.html">Health Feed</a></span>
-        <span><a href="../login/login.html">Login/Sign-up</a></span>
-    </div>
-
-    <!-- container navbar -->
-    <div class="navbar-container">
-        <div id="image-logo"><img src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png"
-                alt="logo">
+    <header>
+        <!-- Navbar -->
+        <div class="topbar">
+            <div class="container">
+                <a href="https://www.lybrate.com/mobile?lpt=HOME">Get the App</a>
+                <a href="../ForDoctors/fordoctors.html">For Doctors</a>
+                <a href="../health_feed/health_feed.html">Health Feed</a>
+                <a href="../login/login.html">Login/Sign-up</a>
+            </div>
         </div>
 
-        <div class="content">
-            <a href="../askAQuestion/askAQuestion.html">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png"
-                    alt="">
-                <span>Ask a Question</span>
-            </a>
-            <a href="../bookApointment/bookApointment.html">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png"
-                    alt="">
-                Book Appointment
-            </a>
-            <a href="url">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png"
-                    alt="">
-                Consult Online
-            </a>
-            <a href="url">
-                <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png"
-                    alt="">
-                Book Lab Test
-            </a>
-        </div>
-
-        <div id="logos">
-            <a href="url">
-                <div id="logo">
-                    <p>Lybrate </p><span>goodKart</span>
+        <div class="logo_and_nav_section">
+            <div class="container">
+                <div class="logo_container">
+                    <img class="logo"
+                        src="https://assets.lybrate.com/q_auto,f_auto//imgs/product/logos/Lybrate-Logo.png"
+                        alt="lybrate">
                 </div>
-            </a>
-            <a href="url">
-                <i class="fas fa-shopping-cart"
-                    style="color: rgb(201, 11, 11); font-size: 35px; margin-left: -50px;"></i>
 
-            </a>
+                <div class="nav_and_cart_section">
+                    <nav class="navigation_menu">
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Ask-Question.png"
+                                alt="">
+                            <a href="../login/login.html">Ask a Question</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Appointment.png"
+                                alt="">
+                            <a href="../bookApointment/bookApointment.html">Book Appointment</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Consult-Online.png"
+                                alt="">
+                            <a href="../consultonline/consultonline.html">Consult Online</a>
+                        </div>
+                        <div>
+                            <img src="https://assets.lybrate.com/q_auto,f_auto,h_28,w_28,c_fill/imgs/product/Homepage/Book-Lab-test.png"
+                                alt="">
+                            <a href="#">Book Lab Test</a>
+                        </div>
+                    </nav>
+
+                    <div class="goodcart_and_cart_section">
+                        <button>
+                            <img src="../images/goodcart.png" alt="" onclick="gotoCart()">
+                        </button>
+
+                        <div class="cart_img_container">
+                            <img src="../images/cart.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
+    </header>
 
 
     <!-- sign up section -->

@@ -2,91 +2,128 @@
   margin: 0;
   padding: 0%;
 }
+
 body {
   background-color: rgb(238, 236, 236);
   scroll-behavior: smooth;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 body a {
   text-decoration: none;
 }
-/* top navbar */
-.navbar-top {
-  margin-top: 2px;
-  text-align: right;
-}
-.navbar-top span a {
-  margin: 15px;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: rgb(87, 87, 87);
-  font-size: 15px;
-}
-.navbar-top span:last-child {
-  margin-right: 78px;
+
+/* Template */
+.container {
+  max-width: 1204px;
+  margin: auto;
+  padding: 0 10px;
 }
 
-/* container navbar */
-.navbar-container {
-  display: grid;
-  grid-template-columns: 25% 60% 13%;
-  background: white;
-  padding: 10px;
-  height: 50px;
-  margin-top: 5px;
+/* NAVBAR SECTION */
+/* topbar */
+.topbar {
+  width: 100%;
+  background-color: #ebeef3;
+}
+
+.topbar a {
+  color: #6c6a6a;
+}
+
+.topbar .container {
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 33px;
+  font-size: 14px;
+}
+
+.logo_and_nav_section {
+  background-color: white;
+}
+
+.logo_and_nav_section .container {
+  height: 61px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: -2px;
+}
+
+.logo_and_nav_section .logo_container {
+  width: 112px;
+}
+
+.logo_and_nav_section .logo_container img {
+  width: 100%;
+}
+
+.nav_and_cart_section {
+  display: flex;
+  gap: 28px;
+  position: relative;
+  top: -2px;
+}
+
+.nav_and_cart_section nav {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav_and_cart_section nav div {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.nav_and_cart_section nav div a {
+  color: #444;
+  font-size: 16px;
+  font-weight: 550;
+}
+
+.goodcart_and_cart_section {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.goodcart_and_cart_section button {
+  width: 109px;
+  height: 37px;
+  border-radius: 20px;
+  background-color: #c82506;
+  color: white;
+  border: 0;
+  padding: 0 12px;
+  font-family: "Roboto", sans-serif;
+  display: flex;
   align-items: center;
 }
-#image-logo {
-  margin-right: 100px;
-  margin-left: 0%;
 
-  text-align: center;
-}
-#image-logo img {
-  width: 130px;
-  margin-left: 0%;
-}
-#logos a:last-child {
-  float: right;
+.goodcart_and_cart_section button:hover {
+  cursor: pointer;
 }
 
-.content a {
-  margin: 13px;
-  color: rgb(63, 63, 63);
-  font-size: 16px;
-  font-weight: 600;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.content a img {
-  margin: 1px;
-  margin-bottom: -10px;
-}
-#logo {
-  width: 100px;
-  margin-left: -30px;
-  color: white;
-  background: rgb(192, 20, 20);
-  padding: 10px;
-  border-radius: 50px;
-  text-align: left;
-  height: 27px;
-}
-#logo p {
-  font-size: 13px;
-  text-align: center;
-  margin-top: -3px;
+.goodcart_and_cart_section button img {
+  width: 100%;
 }
 
-#logo span {
-  font-size: 17px;
-  font-weight: 700;
-  text-decoration: none;
-  margin-top: 0;
-  margin-left: 11px;
-  text-align: center;
+.cart_img_container {
+  width: 32px;
+  margin: 0 13px;
 }
-#logos a:last-child {
-  margin-top: -50px;
-  margin-left: -30px;
+
+.cart_img_container img {
+  width: 100%;
+}
+
+.cart_img_container img:hover {
+  cursor: pointer;
 }
 
 /* login section */
@@ -97,10 +134,12 @@ body a {
   color: #9a9b9f;
   font-weight: lighter;
 }
+
 #login {
   width: 33%;
   margin: auto;
 }
+
 #header {
   height: 60px;
   display: grid;
@@ -110,6 +149,7 @@ body a {
   font-weight: 200;
   background: white;
 }
+
 #header p:nth-child(1) {
   height: 100%;
   display: flex;
@@ -120,10 +160,12 @@ body a {
   border-bottom-width: thin;
   align-items: center;
 }
+
 #header p:nth-child(2) {
   margin-left: 40px;
   color: grey;
 }
+
 #header p:nth-child(2) a {
   color: black;
 }
@@ -134,10 +176,12 @@ input {
   font-size: 18px;
   outline: none;
 }
+
 #form {
   /* box-shadow: 1px 1px 2px white; */
   border: 1px solid rgb(216, 213, 213);
 }
+
 #form div {
   margin: 20px;
   border-bottom-style: solid;
@@ -148,14 +192,17 @@ input {
   font-size: 18px;
   color: rgb(97, 96, 96);
 }
+
 #form p {
   margin-bottom: 10px;
 }
+
 #form p a {
   margin: 20px;
   color: rgb(187, 28, 28);
   font-size: 13px;
 }
+
 #loginButon {
   /* margin-top: 10px; */
   background: rgb(189, 13, 13);
@@ -166,6 +213,7 @@ input {
   justify-content: center;
   align-items: center;
 }
+
 #noaccount {
   font-size: 13px;
   text-align: center;
@@ -189,22 +237,27 @@ input {
   justify-content: center;
   grid-gap: 5%;
 }
+
 .detailsAndPages p {
   color: rgb(153, 147, 147);
 }
+
 li {
   list-style-type: none;
   margin: 7px;
 }
+
 li a {
   color: white;
   font-size: 17px;
 }
+
 .social {
   margin-top: 20px;
   margin-left: 80px;
   font-size: 30px;
 }
+
 .social a {
   margin: 10px;
   color: white;
