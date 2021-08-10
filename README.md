@@ -41,4 +41,4 @@ also, to explore
 
 ### MESSAGE FROM TEAM >
 
-- we really enjoyed this whole part of clonning and have given our best efforts to bring the BEST thing as POSSIBLE. \*
+_we really enjoyed this whole part of clonning and have given our best efforts to bring the BEST thing as POSSIBLE._
