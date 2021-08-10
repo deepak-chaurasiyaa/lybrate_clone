@@ -406,3 +406,7 @@ document.body.addEventListener('click', function (event) {
     }
 
 })
+
+for (var j = 0; j < doctors.length; j++) {
+    appendDoctors(doctors[j])
+}
